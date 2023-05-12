@@ -18,5 +18,5 @@ contract_account.f(symbolic_var)
 for state in m.terminated_states:
     last_tx = state.platform.transactions[-1]
     if last_tx.result in ['REVERT', 'INVALID']:
-        print('Throw found {}'.format(m.workspace))
+        print(f'Throw found {m.workspace}')
         m.generate_testcase(state, 'ThrowFound')

@@ -50,7 +50,7 @@ for state in m.ready_states:
     # Check if it is possible to have balance_after > balance_before
     condition = Operators.UGT(balance_after, balance_before)
     if m.generate_testcase(state, name="BugFound", only_if=condition):
-        print("Bug found! see {}".format(m.workspace))
+        print(f"Bug found! see {m.workspace}")
         bug_found = True
 
 if not bug_found:

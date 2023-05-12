@@ -25,6 +25,6 @@ for state in m.terminated_states:
             no_bug_found = False
 
 if no_bug_found:
-    print(f'No bug found')
+    print('No bug found')
 
 
